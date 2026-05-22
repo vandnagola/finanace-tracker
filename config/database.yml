@@ -15,6 +15,9 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  username: postgres
+  password: Root@123
+
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   max_connections: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -90,15 +93,3 @@ production:
     database: finance_tracker_production
     username: finance_tracker
     password: <%= ENV["FINANCE_TRACKER_DATABASE_PASSWORD"] %>
-  cache:
-    <<: *primary_production
-    database: finance_tracker_production_cache
-    migrations_paths: db/cache_migrate
-  queue:
-    <<: *primary_production
-    database: finance_tracker_production_queue
-    migrations_paths: db/queue_migrate
-  cable:
-    <<: *primary_production
-    database: finance_tracker_production_cable
-    migrations_paths: db/cable_migrate
