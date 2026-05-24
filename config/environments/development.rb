@@ -77,5 +77,6 @@ Rails.application.configure do
   # config.generators.apply_rubocop_autocorrect_after_generate!
    # config.active_job.queue_adapter = :inline
    config.active_job.queue_adapter = :solid_queue
+   config.mission_control.jobs.http_basic_auth_enabled = false
   
 end
