@@ -24,4 +24,3 @@ Things you may want to cover:
 * ...
 
 
-postgresql://finance_pg_46oc_user:E4sy3pRrwtPL9X2m58FXq0JqDNToDWCh@dpg-d89jd1gg4nts739l09e0-a/finance_pg_46oc
