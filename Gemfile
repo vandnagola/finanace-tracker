@@ -19,6 +19,7 @@ gem "pg"
 
 gem "dartsass-rails"
 gem "bootstrap", "~> 5.3.3"
+gem 'devise-bootstrap-views', '~> 1.0'
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
